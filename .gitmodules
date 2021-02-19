@@ -1,0 +1,12 @@
+[submodule ".vim/pack/tpope/start/commentary"]
+	path = .vim/pack/tpope/start/commentary
+	url = https://github.com/tpope/vim-commentary
+[submodule ".vim/pack/tpope/start/sleuth"]
+	path = .vim/pack/tpope/start/sleuth
+	url = https://github.com/tpope/vim-sleuth
+[submodule ".config/i3blocks/anachron"]
+	path = .config/i3blocks/anachron
+	url = https://github.com/Anachron/i3blocks
+[submodule ".config/i3blocks/contrib"]
+	path = .config/i3blocks/contrib
+	url = https://github.com/vivien/i3blocks-contrib

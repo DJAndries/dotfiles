@@ -1,0 +1,35 @@
+# i3blocks configuration file
+#
+# The i3blocks man page describes the usage of the binary,
+# and its website describes the configuration:
+#
+#     https://vivien.github.io/i3blocks
+
+
+# Global properties
+separator=true
+separator_block_width=15
+
+[cmus]
+command=~/.config/i3blocks/anachron/blocks/scroll cmus
+markup=pango
+interval=2
+
+[bandwidth]
+command=~/.config/i3blocks/contrib/bandwidth/bandwidth
+interval=5
+color=#f5af19
+
+[weather]
+command=curl 'https://api.openweathermap.org/data/2.5/weather?q=Vancouver&appid=bfab8d28ae37d1f0e118954749511540&units=metric' > /tmp/weather; echo "🌥️ $(jq .main.temp /tmp/weather) °C, $(jq --raw-output .weather\[0\].description /tmp/weather)"; rm /tmp/weather
+interval=3600
+color=#A4C2F4
+
+[greetings]
+color=#f5af19
+command=echo "Hello, $USER!"
+interval=once
+
+[time]
+command=date '+%a %b %d %I:%M:%S %p'
+interval=5
