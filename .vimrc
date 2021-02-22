@@ -15,6 +15,7 @@ syntax enable
 
 set tabstop=4
 set shiftwidth=4
+set number
 let g:rust_recommended_style = 0
 
 " set statusline+=%#warningmsg#
