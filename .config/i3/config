@@ -181,12 +181,18 @@ bar {
         status_command i3status
         output primary
         position top
+        colors {
+                background #323232
+        }
 }
 
 bar {
         output nonprimary
         status_command i3blocks
         position top
+        colors {
+                background #323232
+        }
 }
 
 for_window [class=".*"] border pixel 4
@@ -207,9 +213,10 @@ bindsym $mod+n exec brave
 bindsym $mod+m exec thunderbird
 
 
-set $shutdown_mode shutdown for real?? (y/n)
+set $shutdown_mode shutdown, reboot or nah?? (y/r/n)
 mode "$shutdown_mode" {
         bindsym y exec --no-startup-id poweroff
+        bindsym r exec --no-startup-id systemctl reboot
         bindsym n mode "default"
         bindsym Escape mode "default"
 }
