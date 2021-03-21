@@ -5,6 +5,7 @@ Plug 'tpope/vim-sleuth'
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'rust-lang/rust.vim'
+Plug 'tomlion/vim-solidity'
 " Plug 'vim-syntastic/syntastic'
 
 let g:vim_jsx_pretty_colorful_config = 1

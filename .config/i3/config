@@ -213,7 +213,7 @@ bindsym $mod+n exec brave
 bindsym $mod+m exec thunderbird
 bindsym $mod+b exec gnome-calculator
 
-bindsym $mod+Shift+p exec "pkill picom && picom"
+bindsym $mod+Shift+p exec "pkill picom && sleep 1 && picom"
 
 set $shutdown_mode shutdown, reboot or nah?? (y/r/n)
 mode "$shutdown_mode" {
