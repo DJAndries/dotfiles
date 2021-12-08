@@ -210,6 +210,7 @@ bindsym $mod+p exec i3lock -t -i ~/.config/i3/lock.png
 
 bindsym $mod+o exec ~/.config/i3/display-swap.sh
 bindsym $mod+n exec brave
+bindsym $mod+shift+n exec brave -incognito
 bindsym $mod+m exec thunderbird
 bindsym $mod+b exec gnome-calculator
 
