@@ -213,6 +213,8 @@ bindsym $mod+n exec brave
 bindsym $mod+shift+n exec brave -incognito
 bindsym $mod+m exec thunderbird
 bindsym $mod+b exec gnome-calculator
+bindsym $mod+q exec arandr
+bindsym $mod+c exec signal-desktop
 
 bindsym $mod+Shift+p exec "pkill picom && sleep 1 && picom"
 
